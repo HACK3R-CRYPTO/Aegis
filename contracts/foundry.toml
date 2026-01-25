@@ -1,0 +1,20 @@
+[profile.default]
+bytecode_hash = "none"
+evm_version = "cancun"
+ffi = true
+fs_permissions = [{access = "read-write", path = ".forge-snapshots/"}]
+libs = ["lib"]
+out = "out"
+solc_version = "0.8.30"
+src = "src"
+via_ir = false
+
+
+[rpc_endpoints]
+unichain_sepolia = "https://sepolia.unichain.org"
+reactive_kopli = "https://kopli-rpc.reactive.network"
+sepolia = "https://rpc.sepolia.org"
+
+[lint]
+exclude_lints = ["screaming-snake-case-immutable", "screaming-snake-case-const"]
+lint_on_build = false
